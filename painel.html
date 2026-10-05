@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+  <title>Painel | Clínica</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>Clínica</strong>
+      <span id="perfilTopo" class="topbar-subtitle"></span>
+    </div>
+    <button class="secondary small" onclick="logout()">Sair</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="hero">
+      <div>
+        <span id="eyebrow" class="eyebrow"></span>
+        <h1 id="boasVindas"></h1>
+        <p id="descricao"></p>
+      </div>
+    </section>
+
+    <section class="grid-dashboard">
+      <section class="card">
+        <h2>Meu perfil</h2>
+        <div id="perfil" class="user-list"></div>
+      </section>
+
+      <section class="card users-card">
+        <div class="section-title">
+          <div>
+            <h2 id="tituloLista"></h2>
+            <p class="muted">Dados carregados pela API protegida.</p>
+          </div>
+        </div>
+        <div id="lista" class="user-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="/painel.js"></script>
+</body>
+</html>
